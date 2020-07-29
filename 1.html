@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB1-html</title>
+<meta charset="utf-8">
+</head>
+<body>
+ <h1><a href="index.html" target="_blank">WEB</a></h1>
+<ol>
+<li><a href="2.html" target="_blank">html</a></li>
+<li><a href="3.html" target="_blank">css</a></li>
+<li><a href="4.html" target="_blank">javascript</a></li>
+</ol>
+
+위 링크를 확인하세요<br>
+<h2>RMS 업무 진행 큰틀</h2>
+<p>오전 점검 >> <strong>장중 <u>이상유무</u> 확인 및 요청건 처리</strong> >> 장 종료후 일일파일 작성 및 증시일정 확인후 설정 >>> 마지막 오후점검</p>
+특정계좌 설정<br>
+replace INTO `ilTbl` VALUES (HEX(AES_ENCRYPT('37592524','1234655647382910')),'041590','1',0,40,'20200807');</p>
+
+
+<strong><a href="https://rmsstock-manager.futurewiz.co.kr/admin/conference/regist" target="_blank" title="종목협의싸이트">종목협의 싸이트</a></strong>   <<<<<< 클릭하세요!!!<br>
+위 링크 싸이트에 올라오는 업무건 처리<br>
+
+특정계좌 계좌 단위로 삭제<br>
+delete from ilTbl where acntNo=HEX(AES_ENCRYPT('37768608','1234655647382910'));<br>
+<br>
+<img src="fox.jpg" width="50%"><br>
+
+<h2>LVTBL 관련</h2>
+담보인정<br>
+replace INTO `lvTbl` VALUES (HEX(AES_ENCRYPT('37827150','1234655647382910')),'1',0,0,'033340','20200724');</p>
+
+<p>입고<br>
+INSERT INTO `lvTbl` VALUES (HEX(AES_ENCRYPT('37827150','1234655647382910')),'2',10,0,'208340','20200724');</p>
+
+<p>출금<br>
+replace INTO `lvTbl` VALUES (HEX(AES_ENCRYPT('37827150','1234655647382910')),'3',10000000,0,'','20200724');</p>
+
+<p>출고<br>
+replace INTO `lvTbl` VALUES (HEX(AES_ENCRYPT('37827150','1234655647382910')),'4',26,0,'196170','20200724');</p>
+
+<p>lvtbl 계좌단위로 삭제<br>
+delete from lvTbl where acntNo=HEX(AES_ENCRYPT('37827150','1234655647382910'));</p>
+
+
+시스템제한 설정 및 해제<br>
+replace into ji_lock values('025440', '182', '28', 0, '3', '', '20200507075600', now());<br>
+replace into ji_lock values('025440', '182', '28', 1, '3', '시스템 제한종목', '20200507075600', now());<br>
+<br>
+LCRESET 반대매도 취소 / 로스컷계좌 반대매도 주문 취소 리얼에서 진행하면 스텐바이도 취소 처리됨<br>
+LCRESET -r -s3 -cn -i계좌번호<br>
+<br>
+</body>
+</html>
